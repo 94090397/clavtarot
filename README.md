@@ -262,16 +262,8 @@ npm install
 
 If ClavTarot brings a little magic to your day, consider supporting its development:
 
-### Donate / 打赏
-
-| Platform | Link |
-|----------|------|
-| ⭐ **Star this repo** | The easiest way to support — [Star on GitHub](https://github.com/94090397/clavtarot) |
-| 🌟 **爱发电 (Afdian)** | [afdian.com/a/clavtarot](https://afdian.com/a/clavtarot) |
-| 💚 **微信赞赏** | <img src="assets/wechat-donate.png" width="200" alt="WeChat Donate"> |
-| 🔵 **支付宝** | <img src="assets/alipay-donate.png" width="200" alt="Alipay Donate"> |
-
-> Replace the QR code images above with your own WeChat/Alipay payment QR codes.
+- **Star the repo**: [Star on GitHub](https://github.com/94090397/clavtarot) — the easiest way to support!
+- **爱发电 (Afdian)**: [afdian.com/a/clavtarot](https://afdian.com/a/clavtarot)
 
 ## Acknowledgments
 
