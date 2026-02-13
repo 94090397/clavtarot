@@ -73,7 +73,7 @@ Visit [fal.ai/dashboard/keys](https://fal.ai/dashboard/keys) and create an API k
 ### 2. Clone the Skill
 
 ```shell
-git clone https://github.com/user/clavtarot ~/.openclaw/skills/clavtarot
+git clone https://github.com/94090397/clavtarot ~/.openclaw/skills/clavtarot
 ```
 
 ### 3. Configure OpenClaw
@@ -253,7 +253,7 @@ Contributions are welcome! Here are some ideas:
 ### Development
 
 ```shell
-git clone https://github.com/user/clavtarot.git
+git clone https://github.com/94090397/clavtarot.git
 cd clavtarot
 npm install
 ```
@@ -264,7 +264,7 @@ If ClavTarot brings a little magic to your day, consider supporting its developm
 
 <a href="https://www.buymeacoffee.com/clavtarot" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="Buy Me A Coffee" width="200"></a>
 
-- **GitHub Sponsors**: [Sponsor on GitHub](https://github.com/sponsors/user)
+- **GitHub Sponsors**: [Sponsor on GitHub](https://github.com/sponsors/94090397)
 - **Buy Me a Coffee**: [buymeacoffee.com/clavtarot](https://buymeacoffee.com/clavtarot)
 - **Star the repo**: Show your love with a star on GitHub
 
