@@ -1,4 +1,4 @@
 # These are supported funding model platforms
-github: [94090397]
-buy_me_a_coffee: clavtarot
-custom: ['https://www.buymeacoffee.com/clavtarot']
+# github: [94090397]  # Requires Stripe (not available in mainland China)
+# buy_me_a_coffee: clavtarot  # Requires foreign payment method
+custom: ['https://afdian.com/a/clavtarot']

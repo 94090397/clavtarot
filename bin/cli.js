@@ -581,8 +581,8 @@ ${c("magenta", "Spread Types:")}
 ${c("dim", "The stars have aligned. Your tarot reader awaits...")}
 
 ${c("cyan", "Enjoying ClavTarot? Consider supporting the project:")}
-  ${c("bright", "https://buymeacoffee.com/clavtarot")}
-  ${c("bright", "https://github.com/sponsors/user")}
+  ${c("bright", "https://afdian.com/a/clavtarot")}
+  ${c("bright", "https://github.com/94090397/clavtarot")} ${c("dim", "(Star ⭐)")}
 `);
 }
 
