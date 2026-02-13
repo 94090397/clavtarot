@@ -1,0 +1,59 @@
+{
+  "name": "clavtarot",
+  "version": "1.0.0",
+  "description": "AI Tarot Reader skill for OpenClaw - mystical card readings with AI-generated tarot imagery",
+  "bin": {
+    "clavtarot": "./bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "skill/",
+    "templates/",
+    "data/",
+    "SKILL.md",
+    "assets/"
+  ],
+  "keywords": [
+    "openclaw",
+    "tarot",
+    "divination",
+    "fortune",
+    "ai-agent",
+    "image-generation",
+    "fal.ai",
+    "grok-imagine",
+    "mystic",
+    "daily-fortune",
+    "card-reading",
+    "messaging"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/clavtarot"
+  },
+  "homepage": "https://github.com/user/clavtarot#readme",
+  "bugs": {
+    "url": "https://github.com/user/clavtarot/issues"
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/user"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://buymeacoffee.com/clavtarot"
+    }
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@fal-ai/client": "^1.2.0",
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}

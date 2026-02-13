@@ -1,0 +1,679 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "totalCards": 78,
+    "majorArcana": 22,
+    "minorArcana": 56,
+    "description": "Complete 78-card Rider-Waite tarot deck with upright and reversed meanings"
+  },
+  "majorArcana": [
+    {
+      "id": 0,
+      "name": "The Fool",
+      "numeral": "0",
+      "element": "Air",
+      "zodiac": "Uranus",
+      "imagePrompt": "The Fool tarot card, a young traveler at the edge of a cliff with a white rose, small dog at feet, bright sun, mystical art nouveau style, gold and violet tones",
+      "upright": {
+        "keywords": ["new beginnings", "innocence", "spontaneity", "free spirit"],
+        "meaning": "A new chapter awaits you. Embrace the unknown with childlike wonder and trust in the journey ahead. The universe is inviting you to take a leap of faith.",
+        "love": "A fresh start in romance is on the horizon. Be open to unexpected connections and let go of past relationship patterns.",
+        "career": "An exciting new opportunity or career path is calling. Don't overthink it — follow your instincts and embrace the adventure.",
+        "health": "Time to try a new approach to wellness. Your body and mind are ready for a fresh start."
+      },
+      "reversed": {
+        "keywords": ["recklessness", "fear", "risk-taking", "holding back"],
+        "meaning": "You may be acting recklessly without considering consequences, or conversely, fear is holding you back from taking necessary risks.",
+        "love": "Beware of rushing into something without thought, or letting fear of vulnerability keep you from opening your heart.",
+        "career": "Impulsive decisions could backfire. Take a moment to plan before making career changes.",
+        "health": "Neglecting your health through careless habits. Time to be more mindful of your body's needs."
+      }
+    },
+    {
+      "id": 1,
+      "name": "The Magician",
+      "numeral": "I",
+      "element": "Mercury",
+      "zodiac": "Mercury",
+      "imagePrompt": "The Magician tarot card, a robed figure with one hand pointing to sky and one to earth, infinity symbol above head, table with cup sword pentacle wand, mystical art nouveau, gold and violet",
+      "upright": {
+        "keywords": ["manifestation", "resourcefulness", "power", "inspired action"],
+        "meaning": "You have all the tools and resources you need. Channel your willpower and focus to manifest your desires into reality.",
+        "love": "You have the power to attract the love you desire. Be confident and authentic in expressing your feelings.",
+        "career": "Your skills and talents are aligned. Take inspired action — now is the time to make things happen.",
+        "health": "Your mind-body connection is strong. Use this power to heal and transform your wellbeing."
+      },
+      "reversed": {
+        "keywords": ["manipulation", "poor planning", "untapped talents", "deception"],
+        "meaning": "Beware of manipulation — either from others or your own tendency to cut corners. Your talents may be going to waste.",
+        "love": "Someone may not be showing their true intentions. Trust your intuition about deceptive behavior.",
+        "career": "Scattered energy and poor planning are undermining your potential. Focus and realign your efforts.",
+        "health": "You may be ignoring symptoms or not using available resources for your wellbeing."
+      }
+    },
+    {
+      "id": 2,
+      "name": "The High Priestess",
+      "numeral": "II",
+      "element": "Water",
+      "zodiac": "Moon",
+      "imagePrompt": "The High Priestess tarot card, a serene woman seated between two pillars B and J, crescent moon at feet, scroll of Torah, blue robes with cross, mystical art nouveau, silver and deep blue tones",
+      "upright": {
+        "keywords": ["intuition", "sacred knowledge", "divine feminine", "subconscious mind"],
+        "meaning": "Trust your inner voice. Hidden knowledge is surfacing from your subconscious. Be still, listen, and let wisdom reveal itself.",
+        "love": "Deep emotional currents are at play. Trust your gut feelings about a relationship. What's unspoken matters most.",
+        "career": "Your intuition about a situation at work is correct. Don't ignore those subtle signals and inner knowing.",
+        "health": "Pay attention to what your body is telling you. Dreams and subtle sensations carry important health messages."
+      },
+      "reversed": {
+        "keywords": ["secrets", "disconnected from intuition", "withdrawal", "silence"],
+        "meaning": "You've lost touch with your inner wisdom. Secrets or withheld information may be causing confusion. Reconnect with your intuitive self.",
+        "love": "Hidden agendas or unspoken truths are creating distance. Open communication is needed to bridge the gap.",
+        "career": "You're ignoring your instincts about a workplace situation. Information is being withheld from you.",
+        "health": "Ignoring your body's whispers will make them shout. Take time for quiet reflection and self-care."
+      }
+    },
+    {
+      "id": 3,
+      "name": "The Empress",
+      "numeral": "III",
+      "element": "Earth",
+      "zodiac": "Venus",
+      "imagePrompt": "The Empress tarot card, a regal woman on a throne in a lush garden, crown of twelve stars, wheat field, flowing gown, waterfall, mystical art nouveau, emerald and gold tones",
+      "upright": {
+        "keywords": ["femininity", "beauty", "nature", "abundance", "nurturing"],
+        "meaning": "Abundance flows to you now. Embrace your creative power and nurture the seeds you've planted. Beauty and growth surround you.",
+        "love": "Love is blossoming beautifully. Deep emotional connections and sensual pleasure are highlighted. Nurture your relationship.",
+        "career": "Creative projects flourish. Your nurturing leadership style brings out the best in your team. Abundance is growing.",
+        "health": "Your body is in a fertile, creative phase. Prioritize self-care and surround yourself with natural beauty."
+      },
+      "reversed": {
+        "keywords": ["creative block", "dependence", "emptiness", "smothering"],
+        "meaning": "Creative energy is blocked or misdirected. You may be neglecting self-care or smothering others with over-attention.",
+        "love": "Codependency or emotional smothering is stifling the relationship. Give space for love to breathe.",
+        "career": "Creative block is frustrating your progress. Step back and reconnect with what inspires you.",
+        "health": "Neglecting your body's needs. Overindulgence or under-nourishment is creating imbalance."
+      }
+    },
+    {
+      "id": 4,
+      "name": "The Emperor",
+      "numeral": "IV",
+      "element": "Fire",
+      "zodiac": "Aries",
+      "imagePrompt": "The Emperor tarot card, an armored ruler on a stone throne with ram heads, holding ankh scepter and orb, red robes, mountain backdrop, mystical art nouveau, crimson and gold tones",
+      "upright": {
+        "keywords": ["authority", "establishment", "structure", "father figure"],
+        "meaning": "Take charge of your life with confidence and discipline. Structure and order will help you achieve your goals. Lead with wisdom.",
+        "love": "Stability and commitment are the foundation. A strong, protective energy enters your love life. Set clear boundaries.",
+        "career": "Leadership opportunities arise. Your organizational skills and authority are recognized. Build solid foundations.",
+        "health": "Discipline in your health routine pays off. Create structured habits that support your long-term wellbeing."
+      },
+      "reversed": {
+        "keywords": ["domination", "excessive control", "rigidity", "lack of discipline"],
+        "meaning": "Excessive control or rigidity is causing problems. You may be either too domineering or lacking the discipline needed.",
+        "love": "Control issues are damaging the relationship. Either too rigid or too chaotic — balance is needed.",
+        "career": "Authoritarian behavior is creating conflict. Or conversely, lack of structure is leading to chaos.",
+        "health": "Either overcontrolling your health regimen to the point of stress, or completely lacking discipline."
+      }
+    },
+    {
+      "id": 5,
+      "name": "The Hierophant",
+      "numeral": "V",
+      "element": "Earth",
+      "zodiac": "Taurus",
+      "imagePrompt": "The Hierophant tarot card, a religious figure seated between two grey pillars, triple crown, two followers kneeling, crossed keys, mystical art nouveau, deep purple and gold tones",
+      "upright": {
+        "keywords": ["spiritual wisdom", "tradition", "conformity", "mentorship"],
+        "meaning": "Seek guidance from a wise mentor or established tradition. There is deep wisdom in conventional approaches. Honor the teachings that came before.",
+        "love": "Traditional values and commitment strengthen your bond. Consider formalizing your relationship or seeking couples counseling.",
+        "career": "Follow established protocols and seek mentorship. Traditional career paths and formal education serve you well now.",
+        "health": "Conventional medicine and established health practices will serve you best. Consult trusted professionals."
+      },
+      "reversed": {
+        "keywords": ["personal beliefs", "freedom", "challenging status quo", "rebellion"],
+        "meaning": "It's time to question established norms and forge your own spiritual path. Convention may be holding you back.",
+        "love": "Unconventional approaches to love may serve you better. Don't let societal expectations define your relationship.",
+        "career": "Breaking from tradition could lead to innovation. Question workplace norms that no longer serve their purpose.",
+        "health": "Alternative healing modalities may offer what conventional medicine cannot. Explore with discernment."
+      }
+    },
+    {
+      "id": 6,
+      "name": "The Lovers",
+      "numeral": "VI",
+      "element": "Air",
+      "zodiac": "Gemini",
+      "imagePrompt": "The Lovers tarot card, a man and woman beneath a radiant angel, tree of knowledge with serpent, tree of life with flames, garden of eden, mystical art nouveau, rose and gold tones",
+      "upright": {
+        "keywords": ["love", "harmony", "relationships", "values alignment", "choices"],
+        "meaning": "A significant choice or union approaches. Follow your heart while staying true to your values. Deep harmony and authentic connection are possible.",
+        "love": "Soulmate energy is present. A deep, meaningful connection that aligns with your highest values. Choose love fearlessly.",
+        "career": "A critical career choice lies ahead. Choose the path that aligns with your core values, not just financial gain.",
+        "health": "Mind-body-spirit harmony is your key to wellness. Choose health practices that feel authentically right for you."
+      },
+      "reversed": {
+        "keywords": ["self-love", "disharmony", "imbalance", "misalignment"],
+        "meaning": "Values are misaligned in a key relationship or decision. Self-love must come before you can truly connect with others.",
+        "love": "Disharmony and mismatched values are causing friction. Reflect on whether this relationship truly aligns with who you are.",
+        "career": "You're in a career that conflicts with your values. A choice was made that doesn't sit right with your conscience.",
+        "health": "Internal conflict is manifesting as physical discomfort. Align your actions with your values to restore balance."
+      }
+    },
+    {
+      "id": 7,
+      "name": "The Chariot",
+      "numeral": "VII",
+      "element": "Water",
+      "zodiac": "Cancer",
+      "imagePrompt": "The Chariot tarot card, an armored warrior in a chariot pulled by one black and one white sphinx, starry canopy, city behind, mystical art nouveau, steel blue and silver tones",
+      "upright": {
+        "keywords": ["willpower", "determination", "success", "ambition", "control"],
+        "meaning": "Victory through determination. Harness opposing forces and drive forward with unwavering focus. You have the willpower to overcome any obstacle.",
+        "love": "Take the reins in your love life. Pursue who and what you want with confidence and determination.",
+        "career": "Career success is within reach through sheer determination. Stay focused and don't let obstacles deter you.",
+        "health": "Your willpower is your greatest health asset right now. Channel it into disciplined wellness routines."
+      },
+      "reversed": {
+        "keywords": ["self-discipline", "opposition", "lack of direction", "aggression"],
+        "meaning": "You're losing control or forcing things in a direction they shouldn't go. Aggression won't solve what patience and strategy can.",
+        "love": "Trying to control the relationship is pushing your partner away. Release the reins and allow love to flow naturally.",
+        "career": "Lack of direction is stalling your progress. Or you're being too aggressive and creating enemies.",
+        "health": "Burnout from pushing too hard. Your body is telling you to slow down and find balance."
+      }
+    },
+    {
+      "id": 8,
+      "name": "Strength",
+      "numeral": "VIII",
+      "element": "Fire",
+      "zodiac": "Leo",
+      "imagePrompt": "Strength tarot card, a woman gently taming a lion, infinity symbol above her head, flower garland, green meadow, mystical art nouveau, warm amber and gold tones",
+      "upright": {
+        "keywords": ["courage", "persuasion", "influence", "compassion", "inner strength"],
+        "meaning": "True strength comes from within. Approach challenges with gentle courage and compassion rather than brute force. Your inner power is immense.",
+        "love": "Patience and compassion will transform your love life. Tame the wild aspects of love with gentle understanding.",
+        "career": "Influence others through quiet confidence, not force. Your inner strength and patience will win over colleagues and clients.",
+        "health": "Gentle persistence in your health journey brings lasting results. Be compassionate with yourself through the process."
+      },
+      "reversed": {
+        "keywords": ["inner strength", "self-doubt", "low energy", "raw emotion"],
+        "meaning": "Self-doubt is undermining your power. You have more strength than you realize. Don't let insecurity make you either too passive or too aggressive.",
+        "love": "Insecurity is sabotaging your relationship. Find your inner confidence before projecting fears onto your partner.",
+        "career": "Imposter syndrome is holding you back. You earned your position — own your expertise with quiet confidence.",
+        "health": "Low energy and self-doubt are affecting your wellbeing. Start with small victories to rebuild your confidence."
+      }
+    },
+    {
+      "id": 9,
+      "name": "The Hermit",
+      "numeral": "IX",
+      "element": "Earth",
+      "zodiac": "Virgo",
+      "imagePrompt": "The Hermit tarot card, a cloaked old sage atop a mountain holding a lantern with a six-pointed star, staff in other hand, snow peaks, mystical art nouveau, deep indigo and silver tones",
+      "upright": {
+        "keywords": ["soul-searching", "introspection", "solitude", "inner guidance"],
+        "meaning": "Withdraw from the noise and look within. The answers you seek are found in solitude and deep reflection. Your inner light guides the way.",
+        "love": "Take time alone to understand what you truly want in love. Solitude now will bring clarity for your heart's path.",
+        "career": "Step back and reflect on your career direction. A period of quiet contemplation will reveal your true calling.",
+        "health": "Retreat and rest are what your body and mind need. Meditation and quiet reflection will restore your vitality."
+      },
+      "reversed": {
+        "keywords": ["isolation", "loneliness", "withdrawal", "lost"],
+        "meaning": "Excessive isolation is becoming unhealthy. You've withdrawn too far from the world. It's time to reconnect and share your light.",
+        "love": "Loneliness from excessive withdrawal. You're pushing people away when connection is what you actually need.",
+        "career": "Working in isolation is limiting your growth. Seek collaboration and mentorship to break through your plateau.",
+        "health": "Social isolation is affecting your mental health. Reach out to others — human connection is medicine."
+      }
+    },
+    {
+      "id": 10,
+      "name": "Wheel of Fortune",
+      "numeral": "X",
+      "element": "Fire",
+      "zodiac": "Jupiter",
+      "imagePrompt": "Wheel of Fortune tarot card, a great spinning wheel with sphinx atop, serpent descending, Anubis ascending, four winged creatures in corners, clouds, mystical art nouveau, royal blue and gold tones",
+      "upright": {
+        "keywords": ["good luck", "karma", "life cycles", "destiny", "turning point"],
+        "meaning": "The wheel turns in your favor. Fate is aligning opportunities for you. Embrace this cycle of good fortune and know that change is the only constant.",
+        "love": "A destined encounter or turning point in love. Fate is weaving something beautiful. Trust the timing of your life.",
+        "career": "Lucky breaks and unexpected opportunities appear. A positive turning point in your career is at hand.",
+        "health": "A positive shift in your health journey. The cycle is turning toward vitality and renewal."
+      },
+      "reversed": {
+        "keywords": ["bad luck", "resistance to change", "breaking cycles", "upheaval"],
+        "meaning": "The wheel turns against you temporarily. Resist the urge to fight fate — instead, look for the lesson in this challenging cycle.",
+        "love": "A difficult phase in your love life. Remember that bad cycles pass. Don't make permanent decisions based on temporary feelings.",
+        "career": "Setbacks and unexpected challenges at work. This too shall pass — focus on what you can control.",
+        "health": "A downturn in health requires patience. Focus on what you can control and trust that the cycle will shift."
+      }
+    },
+    {
+      "id": 11,
+      "name": "Justice",
+      "numeral": "XI",
+      "element": "Air",
+      "zodiac": "Libra",
+      "imagePrompt": "Justice tarot card, a crowned figure seated between pillars holding scales in left hand and upright sword in right, purple veil behind, mystical art nouveau, crimson and gold tones",
+      "upright": {
+        "keywords": ["justice", "fairness", "truth", "cause and effect", "law"],
+        "meaning": "Truth and fairness prevail. What you have sown, you shall reap. Act with integrity and trust that justice will be served.",
+        "love": "Fairness and honesty are essential in your relationship now. Past actions have consequences — own them with grace.",
+        "career": "Fair outcomes in legal matters or disputes. Your hard work and integrity will be recognized and rewarded.",
+        "health": "Cause and effect in health — your habits directly impact your wellbeing. Make honest assessments and adjustments."
+      },
+      "reversed": {
+        "keywords": ["unfairness", "dishonesty", "unaccountability", "injustice"],
+        "meaning": "Injustice or dishonesty is at play. Someone is avoiding accountability, or you're not being fully honest with yourself.",
+        "love": "Unfair dynamics in the relationship. One partner is not being honest or is avoiding responsibility.",
+        "career": "Workplace injustice or unfair treatment. Document everything and stand firm in your truth.",
+        "health": "Avoiding honest assessment of your health. Stop making excuses and face the truth about your habits."
+      }
+    },
+    {
+      "id": 12,
+      "name": "The Hanged Man",
+      "numeral": "XII",
+      "element": "Water",
+      "zodiac": "Neptune",
+      "imagePrompt": "The Hanged Man tarot card, a serene figure suspended upside down from a living tree by one foot, halo of light around head, peaceful expression, mystical art nouveau, teal and gold tones",
+      "upright": {
+        "keywords": ["pause", "surrender", "letting go", "new perspective"],
+        "meaning": "Surrender to the pause. See the world from a different angle. What feels like a delay is actually a profound shift in perspective that will change everything.",
+        "love": "Let go of control in your love life. Seeing your relationship from a new perspective will bring unexpected clarity.",
+        "career": "A career pause is actually a gift. Use this time to see your situation from a completely different angle.",
+        "health": "Stop fighting your body and surrender to what it needs. Rest and a new perspective on wellness will bring healing."
+      },
+      "reversed": {
+        "keywords": ["delays", "resistance", "stalling", "indecision"],
+        "meaning": "You're resisting a necessary pause or refusing to see things differently. Stalling won't help — embrace the shift.",
+        "love": "Resisting necessary changes in your relationship. Your stubbornness is creating unnecessary suffering.",
+        "career": "Delays are frustrating you, but fighting them only makes things worse. Accept and adapt.",
+        "health": "Resisting necessary lifestyle changes. Your body has been asking you to shift your approach — listen."
+      }
+    },
+    {
+      "id": 13,
+      "name": "Death",
+      "numeral": "XIII",
+      "element": "Water",
+      "zodiac": "Scorpio",
+      "imagePrompt": "Death tarot card, a skeleton knight in black armor on a white horse, fallen king, rising sun between two towers, white rose banner, mystical art nouveau, black and sunrise gold tones",
+      "upright": {
+        "keywords": ["endings", "change", "transformation", "transition"],
+        "meaning": "A powerful transformation is underway. Something must end for something new to be born. Release the old with gratitude and embrace your metamorphosis.",
+        "love": "A relationship chapter is ending, but this death gives birth to deeper love. Transform together or release with grace.",
+        "career": "A major career transformation. An old role or approach is dying to make room for something far more aligned with your growth.",
+        "health": "A health transformation is necessary. Let go of old habits that no longer serve you. Rebirth awaits."
+      },
+      "reversed": {
+        "keywords": ["resistance to change", "personal transformation", "inner purging", "stagnation"],
+        "meaning": "You're clinging to what needs to die. Resistance to inevitable change is causing pain. Let go — you cannot stop the transformation, only delay it.",
+        "love": "Holding onto a dead relationship or old patterns. The more you resist the ending, the more pain you create.",
+        "career": "Fear of change is keeping you in a stagnant career. The transformation you're avoiding is exactly what you need.",
+        "health": "Refusing to let go of unhealthy habits. Your body is begging for transformation — stop resisting."
+      }
+    },
+    {
+      "id": 14,
+      "name": "Temperance",
+      "numeral": "XIV",
+      "element": "Fire",
+      "zodiac": "Sagittarius",
+      "imagePrompt": "Temperance tarot card, a winged angel pouring water between two cups, one foot on land one in water, path to mountains with glowing crown, iris flowers, mystical art nouveau, soft gold and blue tones",
+      "upright": {
+        "keywords": ["balance", "moderation", "patience", "purpose", "harmony"],
+        "meaning": "Find the middle path. Balance opposing forces in your life with patience and purpose. Harmony comes through moderation and mindful blending.",
+        "love": "Bring balance and patience to your relationship. Compromise and moderation create lasting harmony.",
+        "career": "A balanced approach to work brings the best results. Don't rush — let things blend together naturally.",
+        "health": "Moderation is your medicine. Balance rest with activity, indulgence with discipline. The middle path heals."
+      },
+      "reversed": {
+        "keywords": ["imbalance", "excess", "self-healing", "realignment"],
+        "meaning": "Life is out of balance. Excess in one area is draining another. It's time for radical realignment and self-healing.",
+        "love": "Imbalance in giving and receiving is straining the relationship. One partner carries too much weight.",
+        "career": "Work-life balance has tipped dangerously. Overcommitment or scattered focus is undermining your effectiveness.",
+        "health": "Extreme habits are harming you. Your body craves balance — find the middle ground in diet, exercise, and rest."
+      }
+    },
+    {
+      "id": 15,
+      "name": "The Devil",
+      "numeral": "XV",
+      "element": "Earth",
+      "zodiac": "Capricorn",
+      "imagePrompt": "The Devil tarot card, a horned winged creature on a pedestal with inverted pentagram, two chained naked figures with loose chains, dark throne, mystical art nouveau, dark crimson and black tones",
+      "upright": {
+        "keywords": ["shadow self", "attachment", "addiction", "restriction", "sexuality"],
+        "meaning": "Face your shadow. Unhealthy attachments, addictions, or limiting beliefs have you chained — but look closely, the chains are loose. You can free yourself.",
+        "love": "Toxic patterns, codependency, or purely physical attraction without depth. Recognize what chains you to unhealthy love.",
+        "career": "Feeling trapped in a soul-crushing job. Golden handcuffs or fear of the unknown keeps you bound. The chains are looser than you think.",
+        "health": "Addictive behaviors or unhealthy attachments are taking a toll. Acknowledge the shadow to begin healing."
+      },
+      "reversed": {
+        "keywords": ["releasing limiting beliefs", "exploring dark thoughts", "detachment", "freedom"],
+        "meaning": "Breaking free from what held you captive. You're releasing toxic patterns and reclaiming your power. Liberation is at hand.",
+        "love": "Breaking free from a toxic relationship or unhealthy pattern. You're reclaiming your power in love.",
+        "career": "Escaping a restrictive work situation. You're finding the courage to break free from career limitations.",
+        "health": "Overcoming addictions and unhealthy habits. A powerful moment of liberation and self-mastery."
+      }
+    },
+    {
+      "id": 16,
+      "name": "The Tower",
+      "numeral": "XVI",
+      "element": "Fire",
+      "zodiac": "Mars",
+      "imagePrompt": "The Tower tarot card, a tall tower struck by lightning, crown blown off top, two figures falling, flames and debris, dark stormy sky, mystical art nouveau, electric blue and fire orange tones",
+      "upright": {
+        "keywords": ["sudden change", "upheaval", "chaos", "revelation", "awakening"],
+        "meaning": "A sudden, disruptive revelation shatters an illusion. Though shocking, this destruction clears the way for truth and authentic rebuilding.",
+        "love": "A shocking revelation or sudden breakup. Though painful, this upheaval destroys what was built on false foundations.",
+        "career": "Sudden job loss, company crisis, or shocking workplace revelation. The old structure must fall for something better to rise.",
+        "health": "A health scare or sudden symptom demands immediate attention. This wake-up call could save you in the long run."
+      },
+      "reversed": {
+        "keywords": ["personal transformation", "fear of change", "averting disaster", "delaying inevitable"],
+        "meaning": "You sense the tower crumbling but are trying to hold it together. The disaster may be delayed but not avoided — better to let it fall now.",
+        "love": "You know the relationship is on shaky ground but keep patching cracks. A controlled demolition is better than a sudden collapse.",
+        "career": "Seeing warning signs at work but ignoring them. Address issues now before they become catastrophic.",
+        "health": "Ignoring warning signs. A health crisis can be averted if you act now instead of later."
+      }
+    },
+    {
+      "id": 17,
+      "name": "The Star",
+      "numeral": "XVII",
+      "element": "Air",
+      "zodiac": "Aquarius",
+      "imagePrompt": "The Star tarot card, a naked woman kneeling by a pool pouring water from two jugs, eight-pointed stars in the sky with one large central star, bird in tree, mystical art nouveau, celestial blue and starlight silver tones",
+      "upright": {
+        "keywords": ["hope", "faith", "purpose", "renewal", "spirituality"],
+        "meaning": "After the storm comes the star. Hope and healing wash over you. Trust that the universe has a beautiful plan for you. Your faith will be rewarded.",
+        "love": "A beautiful period of hope and healing in love. Soul connections deepen. Trust that love is guiding you to where you need to be.",
+        "career": "Renewed inspiration and purpose in your work. You're aligned with your true calling. Let hope guide your next steps.",
+        "health": "Healing and renewal are flowing to you. Your body and spirit are recovering. Have faith in your healing journey."
+      },
+      "reversed": {
+        "keywords": ["lack of faith", "despair", "self-trust", "disconnection"],
+        "meaning": "Hope feels distant and faith wavers. You've lost connection with your inner light. Look up — the star still shines, even when you can't see it.",
+        "love": "Feeling hopeless about love. Don't let despair blind you to the beautiful connections still possible for you.",
+        "career": "Lost sense of purpose at work. Feeling disconnected from your career aspirations. Reconnect with what inspired you.",
+        "health": "Losing faith in your healing process. The body heals in its own time — don't give up hope."
+      }
+    },
+    {
+      "id": 18,
+      "name": "The Moon",
+      "numeral": "XVIII",
+      "element": "Water",
+      "zodiac": "Pisces",
+      "imagePrompt": "The Moon tarot card, a full moon with a face between two towers, a winding path, a dog and wolf howling, a crayfish emerging from water, mystical art nouveau, moonlit silver and deep purple tones",
+      "upright": {
+        "keywords": ["illusion", "fear", "anxiety", "subconscious", "intuition"],
+        "meaning": "Things are not as they seem. Your fears and anxieties are distorting reality. Trust your deepest intuition to navigate through the shadows.",
+        "love": "Confusion and illusion cloud your romantic situation. Not everything is as it appears. Let intuition, not anxiety, guide you.",
+        "career": "Workplace deception or confusion. Hidden agendas may be at play. Trust your gut over surface appearances.",
+        "health": "Anxiety is affecting your health. The fears you carry may be worse than reality. Seek clarity through mindful practices."
+      },
+      "reversed": {
+        "keywords": ["release of fear", "repressed emotion", "inner confusion", "clarity emerging"],
+        "meaning": "Fears and illusions are beginning to dissolve. Clarity emerges as you face your shadows. The truth is finally coming to light.",
+        "love": "The confusion in your love life is clearing. Truths that were hidden are coming to the surface. Embrace the clarity.",
+        "career": "Hidden workplace dynamics are being exposed. The fog is lifting and you can finally see the situation clearly.",
+        "health": "Anxiety is releasing its grip. You're finding clarity about health concerns that once caused irrational fear."
+      }
+    },
+    {
+      "id": 19,
+      "name": "The Sun",
+      "numeral": "XIX",
+      "element": "Fire",
+      "zodiac": "Sun",
+      "imagePrompt": "The Sun tarot card, a radiant sun with a face, a joyful child on a white horse, sunflowers, red banner, garden wall, mystical art nouveau, brilliant gold and warm orange tones",
+      "upright": {
+        "keywords": ["positivity", "fun", "warmth", "success", "vitality"],
+        "meaning": "Pure joy and radiant success illuminate your path. Everything you touch turns to gold. Bask in this glorious, optimistic energy.",
+        "love": "Joyful, warm love surrounds you. A relationship filled with laughter, warmth, and genuine happiness. Celebrate your love!",
+        "career": "Outstanding success and recognition at work. You're shining bright and everyone can see it. Enjoy this golden moment.",
+        "health": "Vibrant vitality and energy. You're glowing from the inside out. Your health is at a peak — enjoy it!"
+      },
+      "reversed": {
+        "keywords": ["inner child", "feeling down", "overly optimistic", "temporary setback"],
+        "meaning": "The sun is still there, just temporarily behind clouds. Don't lose your inner joy to a passing shadow. Your light will shine again soon.",
+        "love": "A temporary dip in relationship happiness. Don't let a small cloud block out all the sunshine in your love life.",
+        "career": "A minor setback dims your enthusiasm. Don't lose sight of how far you've come. This is just a brief shadow.",
+        "health": "Feeling a bit low in energy. This is temporary — your vitality will return. Focus on small joys to reignite your spark."
+      }
+    },
+    {
+      "id": 20,
+      "name": "Judgement",
+      "numeral": "XX",
+      "element": "Fire",
+      "zodiac": "Pluto",
+      "imagePrompt": "Judgement tarot card, an angel blowing a trumpet from clouds, people rising from coffins with arms raised, mountains and ocean, mystical art nouveau, heavenly white and gold tones",
+      "upright": {
+        "keywords": ["judgement", "rebirth", "inner calling", "absolution", "reflection"],
+        "meaning": "A higher calling awakens within you. Reflect on your past with honesty, release guilt, and rise into the person you were always meant to be.",
+        "love": "A moment of reckoning in love. Past relationships are reviewed and understood. Forgiveness opens the door to rebirth.",
+        "career": "A major career decision requires honest self-assessment. Your calling is becoming clearer. Answer it with courage.",
+        "health": "A health wake-up call leads to positive transformation. Past habits are judged and released. A new chapter of wellness begins."
+      },
+      "reversed": {
+        "keywords": ["self-doubt", "inner critic", "ignoring the call", "fear of judgement"],
+        "meaning": "Your inner critic drowns out your higher calling. Self-doubt and fear of judgement are keeping you stuck. Silence the noise and listen to your soul.",
+        "love": "Fear of being judged is preventing authentic connection. Release the inner critic and allow yourself to be loved as you are.",
+        "career": "Ignoring your true calling out of fear. The longer you deny your purpose, the louder it will become.",
+        "health": "Harsh self-judgement is toxic to your wellbeing. Practice self-compassion as part of your healing journey."
+      }
+    },
+    {
+      "id": 21,
+      "name": "The World",
+      "numeral": "XXI",
+      "element": "Earth",
+      "zodiac": "Saturn",
+      "imagePrompt": "The World tarot card, a dancing figure wrapped in purple cloth inside a laurel wreath, four creatures in corners (angel bull lion eagle), infinity, mystical art nouveau, cosmic purple and celestial gold tones",
+      "upright": {
+        "keywords": ["completion", "integration", "accomplishment", "travel", "wholeness"],
+        "meaning": "A magnificent cycle completes. You've achieved wholeness and integration. Celebrate this accomplishment before the next great adventure begins.",
+        "love": "A love story reaches a beautiful milestone. Wholeness and completion in your relationship. You've found what you were searching for.",
+        "career": "A major career goal is achieved. This cycle of work reaches a satisfying conclusion. Take a moment to celebrate before the next chapter.",
+        "health": "A health journey reaches completion. You've integrated the lessons and achieved a state of wholeness and balance."
+      },
+      "reversed": {
+        "keywords": ["seeking personal closure", "shortcuts", "delays", "incompleteness"],
+        "meaning": "Something remains unfinished. You're close to completion but taking shortcuts or avoiding the final steps. See it through to the end.",
+        "love": "Feeling incomplete in love. Something is missing from the picture. Don't settle — keep working toward true wholeness.",
+        "career": "A project or career phase isn't quite complete. Don't rush the ending — tie up loose ends properly.",
+        "health": "A health goal is almost but not quite reached. Don't give up at the finish line — see your healing journey through."
+      }
+    }
+  ],
+  "minorArcana": {
+    "wands": {
+      "element": "Fire",
+      "theme": "Passion, creativity, ambition, energy",
+      "cards": [
+        {
+          "id": 22, "name": "Ace of Wands", "rank": "Ace",
+          "imagePrompt": "Ace of Wands tarot card, a hand emerging from cloud holding a sprouting living wand, falling leaves, castle on distant hill, mystical art nouveau, fiery orange and gold",
+          "upright": { "keywords": ["inspiration", "new opportunity", "growth", "potential"], "meaning": "A spark of creative inspiration ignites. A powerful new beginning in passion projects, career ventures, or personal growth awaits you." },
+          "reversed": { "keywords": ["emerging ideas", "lack of direction", "distractions", "delays"], "meaning": "Creative energy is blocked or scattered. An idea is trying to emerge but can't find its form yet. Clear distractions and refocus." }
+        },
+        {
+          "id": 23, "name": "Two of Wands", "rank": "2",
+          "imagePrompt": "Two of Wands tarot card, a figure on a castle battlement holding a globe and one wand, second wand mounted, overlooking sea, mystical art nouveau, amber and ocean blue",
+          "upright": { "keywords": ["future planning", "progress", "decisions", "discovery"], "meaning": "The world is in your hands. Plan your next move carefully — big opportunities require bold vision and strategic thinking." },
+          "reversed": { "keywords": ["fear of unknown", "lack of planning", "playing safe"], "meaning": "Fear of the unknown keeps you in your comfort zone. Without a plan, your grand vision will remain just a dream." }
+        },
+        {
+          "id": 24, "name": "Three of Wands", "rank": "3",
+          "imagePrompt": "Three of Wands tarot card, a figure standing on a cliff watching ships sail across the sea, three tall wands planted, golden sunset, mystical art nouveau, sunset orange and deep blue",
+          "upright": { "keywords": ["progress", "expansion", "foresight", "overseas"], "meaning": "Your plans are taking shape and ships are coming in. Expansion and growth reward your foresight and patience." },
+          "reversed": { "keywords": ["playing small", "lack of foresight", "unexpected delays"], "meaning": "Plans are delayed or you're thinking too small. Frustration from obstacles — reassess your strategy and expand your vision." }
+        },
+        {
+          "id": 25, "name": "Four of Wands", "rank": "4",
+          "imagePrompt": "Four of Wands tarot card, four wands with flower garlands forming a canopy, celebrating figures, a welcoming castle, mystical art nouveau, festive gold and green",
+          "upright": { "keywords": ["celebration", "joy", "harmony", "milestone", "homecoming"], "meaning": "A time of celebration and happiness! A milestone achieved, a homecoming, or a joyous gathering. Revel in the harmony around you." },
+          "reversed": { "keywords": ["personal celebration", "inner harmony", "conflict in home"], "meaning": "Home or family tensions dampen the celebration. Find inner harmony first before trying to create it externally." }
+        },
+        {
+          "id": 26, "name": "Five of Wands", "rank": "5",
+          "imagePrompt": "Five of Wands tarot card, five youths each brandishing a wand in playful combat, chaotic energy, open field, mystical art nouveau, vibrant clashing colors",
+          "upright": { "keywords": ["conflict", "competition", "tension", "diversity"], "meaning": "Healthy competition and creative conflict challenge you to sharpen your skills. Embrace the chaos — it's making you stronger." },
+          "reversed": { "keywords": ["inner conflict", "avoiding conflict", "tension release"], "meaning": "Internal conflicts need resolution. You're either avoiding necessary confrontation or exhausted from constant battling." }
+        },
+        {
+          "id": 27, "name": "Six of Wands", "rank": "6",
+          "imagePrompt": "Six of Wands tarot card, a victorious rider on horseback wearing a laurel wreath, crowd cheering, six wands raised, mystical art nouveau, triumphant gold and green",
+          "upright": { "keywords": ["success", "public recognition", "progress", "self-confidence"], "meaning": "Victory and public recognition! Your efforts are celebrated and your confidence soars. Enjoy this well-deserved moment of triumph." },
+          "reversed": { "keywords": ["private achievement", "fall from grace", "egotism"], "meaning": "Success without recognition, or ego inflated beyond achievement. Stay humble — true victory doesn't need an audience." }
+        },
+        {
+          "id": 28, "name": "Seven of Wands", "rank": "7",
+          "imagePrompt": "Seven of Wands tarot card, a figure on a hilltop defending position with a wand against six wands from below, determined stance, mystical art nouveau, fierce red and earth tones",
+          "upright": { "keywords": ["perseverance", "defensive", "maintaining control", "standing ground"], "meaning": "Stand your ground! Others challenge your position but your determination keeps you on top. Defend what you've earned with courage." },
+          "reversed": { "keywords": ["exhaustion", "giving up", "overwhelmed"], "meaning": "The fight to maintain your position is exhausting you. Know when to defend and when to strategically retreat." }
+        },
+        {
+          "id": 29, "name": "Eight of Wands", "rank": "8",
+          "imagePrompt": "Eight of Wands tarot card, eight wands flying through a clear sky over a river landscape, swift motion, mystical art nouveau, sky blue and swift silver",
+          "upright": { "keywords": ["movement", "fast action", "air travel", "swift change"], "meaning": "Things accelerate rapidly! Messages arrive, travel beckons, and momentum builds. Strike while the iron is hot — speed is your ally." },
+          "reversed": { "keywords": ["delays", "frustration", "resisting change", "internal alignment"], "meaning": "Frustrating delays slow your momentum. Messages are lost or misunderstood. Patience is needed when speed fails you." }
+        },
+        {
+          "id": 30, "name": "Nine of Wands", "rank": "9",
+          "imagePrompt": "Nine of Wands tarot card, a bandaged weary figure leaning on a wand, eight wands standing as a fence behind, vigilant but tired, mystical art nouveau, battle-worn bronze and violet",
+          "upright": { "keywords": ["resilience", "courage", "persistence", "test of faith", "boundaries"], "meaning": "You're battle-weary but still standing. One final push is needed. Your resilience is being tested but you have the strength to see this through." },
+          "reversed": { "keywords": ["inner resources", "struggle", "overwhelm", "paranoia"], "meaning": "Exhaustion and paranoia are clouding your judgment. You're fighting battles that may not need fighting. Rest and reassess." }
+        },
+        {
+          "id": 31, "name": "Ten of Wands", "rank": "10",
+          "imagePrompt": "Ten of Wands tarot card, a figure struggling to carry ten heavy wands toward a distant town, burdened and bent over, mystical art nouveau, heavy brown and labored gold",
+          "upright": { "keywords": ["burden", "extra responsibility", "hard work", "completion"], "meaning": "You carry a heavy load. The finish line is near but the weight is real. Delegate what you can — you don't have to carry everything alone." },
+          "reversed": { "keywords": ["doing it all", "carrying the burden", "delegation", "release"], "meaning": "The burden becomes unbearable. Learn to put some wands down. Delegation isn't weakness — it's wisdom." }
+        },
+        {
+          "id": 32, "name": "Page of Wands", "rank": "Page",
+          "imagePrompt": "Page of Wands tarot card, a young adventurer in desert landscape holding a wand and gazing at it with curiosity, feathered cap, salamanders on tunic, mystical art nouveau, adventurous orange and sand",
+          "upright": { "keywords": ["inspiration", "ideas", "discovery", "limitless potential", "free spirit"], "meaning": "A burst of creative inspiration and enthusiastic new ideas! Your inner explorer is awakened. Follow your curiosity fearlessly." },
+          "reversed": { "keywords": ["newly-formed ideas", "redirecting energy", "self-limiting beliefs", "procrastination"], "meaning": "Creative ideas fizzle before they launch. Self-doubt or procrastination stifles your spark. Believe in your vision." }
+        },
+        {
+          "id": 33, "name": "Knight of Wands", "rank": "Knight",
+          "imagePrompt": "Knight of Wands tarot card, an armored knight on a rearing horse charging forward with a wand, desert pyramids behind, fiery plume, mystical art nouveau, blazing orange and adventure gold",
+          "upright": { "keywords": ["energy", "passion", "adventure", "impulsiveness", "action"], "meaning": "Charge forward with passion and daring! Adventure calls and your fiery energy is unstoppable. Just remember — courage and recklessness are different things." },
+          "reversed": { "keywords": ["passion project", "haste", "scattered energy", "delays in travel", "frustration"], "meaning": "All fire and no direction. Impulsive actions create chaos. Channel your passion before it burns everything down." }
+        },
+        {
+          "id": 34, "name": "Queen of Wands", "rank": "Queen",
+          "imagePrompt": "Queen of Wands tarot card, a confident queen on a throne with sunflowers, holding a wand and a sunflower, black cat at feet, lions on throne, mystical art nouveau, regal gold and sunflower yellow",
+          "upright": { "keywords": ["courage", "confidence", "independence", "social butterfly", "determination"], "meaning": "You radiate magnetic confidence and warmth. Your determination and social grace open every door. Lead with your natural charisma." },
+          "reversed": { "keywords": ["self-respect", "self-confidence", "introverted", "re-establishing sense of self"], "meaning": "Your confidence has dimmed. Jealousy, self-doubt, or demands from others drain your fire. Reconnect with your inner power." }
+        },
+        {
+          "id": 35, "name": "King of Wands", "rank": "King",
+          "imagePrompt": "King of Wands tarot card, a powerful king on a throne with salamander and lion carvings, holding a sprouting wand, looking forward with vision, mystical art nouveau, royal fire red and commanding gold",
+          "upright": { "keywords": ["natural-born leader", "vision", "entrepreneur", "honour"], "meaning": "A visionary leader who turns ideas into empires. Your bold leadership and creative vision inspire everyone around you. Lead with fire and honour." },
+          "reversed": { "keywords": ["impulsiveness", "haste", "ruthless", "high expectations"], "meaning": "Leadership becomes tyranny. Impulsive decisions and unrealistic expectations alienate those who once followed you willingly." }
+        }
+      ]
+    },
+    "cups": {
+      "element": "Water",
+      "theme": "Emotions, relationships, feelings, intuition",
+      "cards": [
+        { "id": 36, "name": "Ace of Cups", "rank": "Ace", "imagePrompt": "Ace of Cups tarot card, a hand from a cloud holding an overflowing golden chalice, five streams of water, lotus flowers, dove with communion wafer, mystical art nouveau, ocean blue and divine gold", "upright": { "keywords": ["love", "new feelings", "emotional awakening", "creativity"], "meaning": "A chalice of pure love overflows. New emotional beginnings, deep feelings, and spiritual connection pour into your life." }, "reversed": { "keywords": ["self-love", "intuition", "repressed emotions", "emptiness"], "meaning": "Emotional wells have run dry. You're blocking love or ignoring your heart. Fill your own cup before pouring for others." } },
+        { "id": 37, "name": "Two of Cups", "rank": "2", "imagePrompt": "Two of Cups tarot card, a man and woman exchanging golden cups, caduceus with winged lion above, mystical art nouveau, romantic pink and harmonious gold", "upright": { "keywords": ["unified love", "partnership", "mutual attraction", "connection"], "meaning": "A beautiful union of hearts. Mutual attraction and deep partnership energy. Two souls finding harmony together." }, "reversed": { "keywords": ["self-love", "break-ups", "disharmony", "distrust"], "meaning": "A relationship falls out of balance. Miscommunication and distrust erode the connection. Heal yourself to heal the bond." } },
+        { "id": 38, "name": "Three of Cups", "rank": "3", "imagePrompt": "Three of Cups tarot card, three women dancing and raising golden cups in celebration, harvest fruits, flower garlands, mystical art nouveau, joyful peach and celebration gold", "upright": { "keywords": ["celebration", "friendship", "creativity", "collaborations"], "meaning": "Joyous celebration with those you love! Friendship, creative collaboration, and shared happiness. Dance in the light of community." }, "reversed": { "keywords": ["independence", "alone time", "hardcore partying", "third party"], "meaning": "Too much socializing drains you, or loneliness creeps in. A third party may complicate a relationship. Find balance." } },
+        { "id": 39, "name": "Four of Cups", "rank": "4", "imagePrompt": "Four of Cups tarot card, a figure sitting under a tree with crossed arms, three cups before them, a hand from a cloud offering a fourth cup, contemplation, mystical art nouveau, meditative blue and olive", "upright": { "keywords": ["meditation", "contemplation", "apathy", "reevaluation"], "meaning": "Lost in thought, you miss the gift being offered. Don't let apathy or boredom blind you to the opportunities right in front of you." }, "reversed": { "keywords": ["sudden awareness", "choosing happiness", "acceptance", "motivation"], "meaning": "The fog of apathy lifts and you finally see the cup being offered. Seize the opportunity you almost missed." } },
+        { "id": 40, "name": "Five of Cups", "rank": "5", "imagePrompt": "Five of Cups tarot card, a cloaked figure mourning over three spilled cups, two full cups standing behind, bridge to castle in distance, mystical art nouveau, somber grey and mournful blue", "upright": { "keywords": ["regret", "failure", "disappointment", "pessimism"], "meaning": "Grief over what was lost blinds you to what remains. Three cups have spilled, but two still stand. Turn around and see what you still have." }, "reversed": { "keywords": ["personal setbacks", "self-forgiveness", "moving on"], "meaning": "Healing begins as you turn from grief to gratitude. Forgive yourself and embrace what remains. The bridge to joy is right behind you." } },
+        { "id": 41, "name": "Six of Cups", "rank": "6", "imagePrompt": "Six of Cups tarot card, a young boy giving a cup with a white flower to a young girl, six cups filled with flowers, old village, guard walking away, mystical art nouveau, nostalgic warm amber", "upright": { "keywords": ["revisiting the past", "childhood memories", "innocence", "joy"], "meaning": "Sweet nostalgia and innocent joy. A gift from the past or a reconnection with childhood wonder. Let simple happiness warm your heart." }, "reversed": { "keywords": ["living in the past", "forgiveness", "lacking playfulness"], "meaning": "You're stuck in the past, romanticizing what was. Nostalgia becomes a prison when it prevents you from living in the present." } },
+        { "id": 42, "name": "Seven of Cups", "rank": "7", "imagePrompt": "Seven of Cups tarot card, a silhouetted figure gazing at seven cups floating in clouds each holding a different vision (jewels castle wreath dragon snake head glowing figure), mystical art nouveau, dreamy purple and illusory gold", "upright": { "keywords": ["fantasy", "illusion", "wishful thinking", "choices"], "meaning": "So many dreams, so many choices — but which are real? Not every glittering cup holds gold. Discern fantasy from genuine opportunity." }, "reversed": { "keywords": ["alignment", "personal values", "overwhelmed by choices"], "meaning": "The illusions clear and you see what truly matters. Or analysis paralysis has you frozen. Choose one cup and commit." } },
+        { "id": 43, "name": "Eight of Cups", "rank": "8", "imagePrompt": "Eight of Cups tarot card, a cloaked figure walking away from eight stacked cups toward mountains, moon eclipse in sky, rocky terrain, mystical art nouveau, twilight blue and searching silver", "upright": { "keywords": ["disappointment", "abandonment", "withdrawal", "search for truth"], "meaning": "Walking away from what no longer fulfills you. It takes courage to leave behind what's comfortable in search of something deeper." }, "reversed": { "keywords": ["trying one more time", "indecision", "aimless drifting", "fear of change"], "meaning": "Unable to walk away despite knowing you should, or drifting aimlessly after leaving. Find your purpose before you wander too far." } },
+        { "id": 44, "name": "Nine of Cups", "rank": "9", "imagePrompt": "Nine of Cups tarot card, a satisfied figure seated with arms crossed, nine golden cups arranged in an arc behind on a blue draped shelf, contentment, mystical art nouveau, luxurious blue and wish-fulfilled gold", "upright": { "keywords": ["contentment", "satisfaction", "gratitude", "wish come true"], "meaning": "The wish card! Your heart's desire manifests. Deep contentment and emotional satisfaction fill your cup to the brim. Enjoy this moment." }, "reversed": { "keywords": ["inner happiness", "materialism", "dissatisfaction", "indulgence"], "meaning": "Getting what you wanted but finding it hollow. Material satisfaction without inner fulfillment. True happiness comes from within." } },
+        { "id": 45, "name": "Ten of Cups", "rank": "10", "imagePrompt": "Ten of Cups tarot card, a happy couple with arms raised beneath a rainbow of ten cups, two dancing children, lovely home and garden, mystical art nouveau, rainbow hues and family warmth", "upright": { "keywords": ["divine love", "blissful relationships", "harmony", "alignment"], "meaning": "The ultimate emotional fulfillment. A loving family, harmonious home, and deep joy. Your emotional rainbow is complete." }, "reversed": { "keywords": ["disconnection", "misaligned values", "struggling relationships"], "meaning": "The picture-perfect family has cracks. Misaligned values and broken communication need attention. Reconnect with what truly matters." } },
+        { "id": 46, "name": "Page of Cups", "rank": "Page", "imagePrompt": "Page of Cups tarot card, a dreamy youth in flowing tunic gazing at a fish emerging from a golden cup, ocean shore, mystical art nouveau, imaginative aqua and whimsical gold", "upright": { "keywords": ["creative opportunities", "intuitive messages", "curiosity", "possibility"], "meaning": "A magical surprise emerges! Like a fish from a cup, unexpected creative inspiration and intuitive messages arrive. Stay open to wonder." }, "reversed": { "keywords": ["new ideas", "doubting intuition", "creative blocks", "emotional immaturity"], "meaning": "Creative blocks or emotional immaturity stifle the magic. You're ignoring intuitive messages or being overly dramatic." } },
+        { "id": 47, "name": "Knight of Cups", "rank": "Knight", "imagePrompt": "Knight of Cups tarot card, a knight on a calm white horse holding a golden cup forward, winged helmet, river landscape, mystical art nouveau, romantic silver and dreamy blue", "upright": { "keywords": ["creativity", "romance", "charm", "imagination", "beauty"], "meaning": "A romantic messenger arrives bearing emotional gifts. Follow your heart's calling with grace and charm. Let beauty guide your path." }, "reversed": { "keywords": ["overactive imagination", "unrealistic", "jealousy", "moodiness"], "meaning": "Lost in romantic fantasy or moody dramatics. Your imagination creates beautiful stories that have no basis in reality." } },
+        { "id": 48, "name": "Queen of Cups", "rank": "Queen", "imagePrompt": "Queen of Cups tarot card, a serene queen on a throne at the edge of the sea holding an ornate closed cup, cherubs and shells on throne, mystical art nouveau, ocean turquoise and empathic pearl", "upright": { "keywords": ["compassion", "calm", "comfort", "emotional security"], "meaning": "You embody deep emotional wisdom and nurturing compassion. Your intuitive gifts comfort and heal those around you. Trust your heart." }, "reversed": { "keywords": ["inner feelings", "self-care", "co-dependency", "emotional manipulation"], "meaning": "Your empathy has become a burden. Codependency or emotional manipulation drains you. Set boundaries and fill your own cup first." } },
+        { "id": 49, "name": "King of Cups", "rank": "King", "imagePrompt": "King of Cups tarot card, a calm king on a throne in the middle of turbulent seas, holding cup and scepter, fish amulet, ship tossed by waves, mystical art nouveau, wise blue and sovereign gold", "upright": { "keywords": ["emotionally balanced", "compassionate", "diplomatic", "wise"], "meaning": "Mastery over emotions in turbulent times. You remain calm, compassionate, and wise while seas rage around you. Emotional maturity at its finest." }, "reversed": { "keywords": ["self-compassion", "inner feelings", "moodiness", "emotionally manipulative"], "meaning": "Emotional control slips into emotional suppression or manipulation. The calm exterior hides a troubled interior. Face your feelings honestly." } }
+      ]
+    },
+    "swords": {
+      "element": "Air",
+      "theme": "Thoughts, communication, intellect, conflict",
+      "cards": [
+        { "id": 50, "name": "Ace of Swords", "rank": "Ace", "imagePrompt": "Ace of Swords tarot card, a hand from cloud gripping an upright sword crowned with a golden crown, laurel and palm hanging from crown, six yods, mountain peaks, mystical art nouveau, sharp silver and clarity blue", "upright": { "keywords": ["breakthrough", "clarity", "sharp mind", "truth", "new idea"], "meaning": "A lightning bolt of mental clarity cuts through confusion. A breakthrough idea or truth emerges. Wield this sharp insight with wisdom." }, "reversed": { "keywords": ["inner clarity", "re-thinking", "clouded judgement", "chaos"], "meaning": "Mental fog obscures your thinking. Confusion and miscommunication cloud your judgment. Seek clarity before making decisions." } },
+        { "id": 51, "name": "Two of Swords", "rank": "2", "imagePrompt": "Two of Swords tarot card, a blindfolded woman seated at the water's edge holding two crossed swords, crescent moon, rocky islands, mystical art nouveau, moonlit grey and decision silver", "upright": { "keywords": ["difficult choices", "weighing options", "avoidance", "stalemate"], "meaning": "A difficult decision weighs on you. Blindfolded to the truth, you avoid choosing. Remove the blindfold and face the choice with courage." }, "reversed": { "keywords": ["indecision", "confusion", "information overload", "no right choice"], "meaning": "Overwhelmed by information, you're more confused than ever. Sometimes there is no perfect choice — just choose and move forward." } },
+        { "id": 52, "name": "Three of Swords", "rank": "3", "imagePrompt": "Three of Swords tarot card, a red heart pierced by three swords, dark storm clouds and heavy rain, mystical art nouveau, heartbreak crimson and stormy grey", "upright": { "keywords": ["heartbreak", "emotional pain", "sorrow", "grief", "hurt"], "meaning": "Heartbreak pierces deep. This pain, though sharp, is necessary for healing. Allow yourself to grieve — tears wash the wound clean." }, "reversed": { "keywords": ["recovery", "forgiveness", "moving on", "releasing pain"], "meaning": "The worst of the heartbreak is passing. Healing begins as you choose forgiveness. The swords are being gently removed." } },
+        { "id": 53, "name": "Four of Swords", "rank": "4", "imagePrompt": "Four of Swords tarot card, a knight lying in repose on a tomb, hands in prayer, three swords on wall one beneath, stained glass window, mystical art nouveau, restful gold and sanctuary blue", "upright": { "keywords": ["rest", "relaxation", "meditation", "contemplation", "recuperation"], "meaning": "Your mind and body desperately need rest. Retreat to your sanctuary and let silence heal what noise has broken. Recovery through stillness." }, "reversed": { "keywords": ["exhaustion", "burn-out", "deep contemplation", "stagnation"], "meaning": "You've been resting too long or not enough. Either burnout forces you down or stagnation keeps you down. Find the right balance." } },
+        { "id": 54, "name": "Five of Swords", "rank": "5", "imagePrompt": "Five of Swords tarot card, a smirking figure holding three swords while two defeated figures walk away, two swords on ground, choppy sky, mystical art nouveau, conflict grey and bitter green", "upright": { "keywords": ["conflict", "disagreements", "competition", "defeat", "winning at all costs"], "meaning": "A hollow victory won through conflict. You may have won the battle but lost respect. Consider whether being right is worth the cost." }, "reversed": { "keywords": ["reconciliation", "forgiveness", "moving on", "compromise"], "meaning": "The conflict is ending. Reconciliation becomes possible when ego steps aside. Learn the lesson and move forward with grace." } },
+        { "id": 55, "name": "Six of Swords", "rank": "6", "imagePrompt": "Six of Swords tarot card, a cloaked figure and child in a boat guided by a ferryman, six swords standing in the boat, calm water ahead rough water behind, mystical art nouveau, transitional blue and hope silver", "upright": { "keywords": ["transition", "change", "rite of passage", "releasing baggage"], "meaning": "Moving toward calmer waters. You're leaving difficult times behind. The journey isn't easy, but peaceful shores await ahead." }, "reversed": { "keywords": ["personal transition", "resistance", "unfinished business"], "meaning": "Unable to move on or carrying too much baggage into the new chapter. Release what weighs the boat down or you'll never reach shore." } },
+        { "id": 56, "name": "Seven of Swords", "rank": "7", "imagePrompt": "Seven of Swords tarot card, a figure sneaking away from a camp carrying five swords leaving two behind, looking back over shoulder, tents in background, mystical art nouveau, stealth grey and cunning gold", "upright": { "keywords": ["deception", "trickery", "tactics", "strategy", "resourcefulness"], "meaning": "Someone is being clever — perhaps too clever. Whether it's you or another, deception and strategy are at play. Not everything is as it seems." }, "reversed": { "keywords": ["coming clean", "rethinking approach", "confession", "conscience"], "meaning": "The deception is discovered or conscience demands confession. It's time to come clean and face the consequences honestly." } },
+        { "id": 57, "name": "Eight of Swords", "rank": "8", "imagePrompt": "Eight of Swords tarot card, a bound and blindfolded woman surrounded by eight swords stuck in the ground, castle on distant cliff, water at feet, mystical art nouveau, trapped grey and liberation red glimpse", "upright": { "keywords": ["negative thoughts", "self-imposed restriction", "imprisonment", "victim mentality"], "meaning": "You feel trapped, but look closer — the bindings are loose and the swords don't form a complete cage. Your prison is largely of your own making." }, "reversed": { "keywords": ["self-acceptance", "new perspective", "freedom", "releasing restriction"], "meaning": "The blindfold falls and you see the cage was never locked. A powerful shift in perspective frees you from self-imposed limitations." } },
+        { "id": 58, "name": "Nine of Swords", "rank": "9", "imagePrompt": "Nine of Swords tarot card, a person sitting up in bed head in hands in anguish, nine swords hanging on the dark wall, quilt with roses and astrological figures, mystical art nouveau, nightmare black and anguish grey", "upright": { "keywords": ["anxiety", "worry", "fear", "depression", "nightmares"], "meaning": "Dark thoughts torment you in the night. Anxiety and worry spiral into suffering. Remember: most of what we fear never comes to pass." }, "reversed": { "keywords": ["inner turmoil", "deep-seated fears", "releasing worry", "recovery"], "meaning": "The nightmare begins to fade. You're learning to manage anxiety and release deep-seated fears. Dawn is breaking." } },
+        { "id": 59, "name": "Ten of Swords", "rank": "10", "imagePrompt": "Ten of Swords tarot card, a figure lying face down with ten swords in their back, dark sky but golden sunrise on the horizon, calm sea, mystical art nouveau, ending black and dawn gold", "upright": { "keywords": ["painful endings", "deep wounds", "betrayal", "loss", "crisis"], "meaning": "Rock bottom. The worst has happened — but look at the horizon. A golden dawn rises. This is the end of suffering, not the end of you." }, "reversed": { "keywords": ["recovery", "regeneration", "resisting an inevitable end", "learning from pain"], "meaning": "Refusing to accept a painful ending only prolongs the suffering. Or the worst is truly over and recovery can finally begin." } },
+        { "id": 60, "name": "Page of Swords", "rank": "Page", "imagePrompt": "Page of Swords tarot card, a young figure standing on windy high ground holding sword upright, turbulent clouds, birds in sky, mystical art nouveau, intellectual blue and curious silver", "upright": { "keywords": ["new ideas", "curiosity", "thirst for knowledge", "communication"], "meaning": "A sharp young mind eager to learn and communicate. New ideas and intellectual curiosity drive you forward. Speak your truth with youthful energy." }, "reversed": { "keywords": ["self-expression", "all talk no action", "haste", "scattered thoughts"], "meaning": "All talk and no follow-through. Hasty words spoken without thinking create unnecessary conflicts. Think before you speak." } },
+        { "id": 61, "name": "Knight of Swords", "rank": "Knight", "imagePrompt": "Knight of Swords tarot card, an armored knight charging on a galloping horse brandishing a sword, storm clouds and wind-torn trees, butterflies on armor, mystical art nouveau, charging silver and storm blue", "upright": { "keywords": ["ambitious", "action-oriented", "driven", "perfectionist", "fast-thinking"], "meaning": "Charging forward with intellectual ferocity. Your mind is sharp and your ambition unstoppable. Just make sure you're charging in the right direction." }, "reversed": { "keywords": ["restless", "unfocused", "burnout", "impulsive decisions"], "meaning": "Mental energy without direction becomes destructive. Impulsive words and reckless actions leave damage in your wake. Slow down." } },
+        { "id": 62, "name": "Queen of Swords", "rank": "Queen", "imagePrompt": "Queen of Swords tarot card, a stern queen on a stone throne holding upright sword, crown of butterflies, one hand extended, bird in sky, high clouds, mystical art nouveau, intellectual grey and sovereign silver", "upright": { "keywords": ["independent", "unbiased judgement", "clear boundaries", "direct communication"], "meaning": "Clear thinking and honest communication cut through pretense. You see the truth without emotion clouding judgment. Speak and decide with clarity." }, "reversed": { "keywords": ["overly emotional", "easily influenced", "bitchy", "cold-hearted"], "meaning": "Sharp words wound unnecessarily. Your intellect has become a weapon rather than a tool. Balance truth-telling with compassion." } },
+        { "id": 63, "name": "King of Swords", "rank": "King", "imagePrompt": "King of Swords tarot card, an authoritative king on a throne holding a slightly tilted sword, butterflies on throne, two birds, clear sky, trees bending in wind, mystical art nouveau, commanding steel and authority blue", "upright": { "keywords": ["mental clarity", "intellectual power", "authority", "truth", "ethical"], "meaning": "Supreme intellectual authority and ethical leadership. Your clear mind and fair judgment command respect. Lead with truth and integrity." }, "reversed": { "keywords": ["quiet power", "inner truth", "misuse of power", "manipulation"], "meaning": "Intellectual power used for manipulation rather than justice. Or your sharp mind turns inward in destructive self-criticism." } }
+      ]
+    },
+    "pentacles": {
+      "element": "Earth",
+      "theme": "Material world, finances, career, physical health",
+      "cards": [
+        { "id": 64, "name": "Ace of Pentacles", "rank": "Ace", "imagePrompt": "Ace of Pentacles tarot card, a hand from cloud holding a golden coin with pentagram, lush garden below, archway of hedges, path to mountains, mystical art nouveau, prosperous green and wealth gold", "upright": { "keywords": ["new financial opportunity", "prosperity", "abundance", "manifestation"], "meaning": "A golden opportunity for material prosperity appears! New financial beginnings, a lucrative offer, or the seed of future abundance. Plant it wisely." }, "reversed": { "keywords": ["lost opportunity", "lack of planning", "scarcity mindset"], "meaning": "A financial opportunity slips through your fingers due to poor planning or a scarcity mindset. Don't let fear block abundance." } },
+        { "id": 65, "name": "Two of Pentacles", "rank": "2", "imagePrompt": "Two of Pentacles tarot card, a dancing figure juggling two pentacles connected by infinity ribbon, ships on rough seas behind, mystical art nouveau, playful orange and balancing gold", "upright": { "keywords": ["balance", "adaptability", "time management", "prioritization"], "meaning": "Juggling multiple priorities with skill and adaptability. Life's dance requires flexibility — stay light on your feet and keep things moving." }, "reversed": { "keywords": ["over-committed", "disorganization", "reprioritization"], "meaning": "The juggling act is falling apart. You've taken on too much and balls are dropping. Simplify and reprioritize immediately." } },
+        { "id": 66, "name": "Three of Pentacles", "rank": "3", "imagePrompt": "Three of Pentacles tarot card, a stonemason working on cathedral arches consulting with a monk and architect, three pentacles above, intricate stonework, mystical art nouveau, craftsmanship brown and collaborative gold", "upright": { "keywords": ["teamwork", "collaboration", "learning", "implementation"], "meaning": "Masterful collaboration creates something greater than any individual could achieve alone. Your skills are recognized and valued by the team." }, "reversed": { "keywords": ["disharmony", "misalignment", "working alone", "lack of teamwork"], "meaning": "The team isn't clicking. Misalignment of goals and poor communication undermine the project. Realign or redefine roles." } },
+        { "id": 67, "name": "Four of Pentacles", "rank": "4", "imagePrompt": "Four of Pentacles tarot card, a crowned figure sitting on a stone bench tightly holding a pentacle, one under each foot one on crown, city skyline behind, mystical art nouveau, possessive grey and material gold", "upright": { "keywords": ["saving money", "security", "conservatism", "scarcity", "control"], "meaning": "Holding tight to what you have. Financial security through conservation, but beware of gripping so tight that nothing can flow in or out." }, "reversed": { "keywords": ["over-spending", "self-protection", "greediness", "insecurity"], "meaning": "Either spending recklessly or gripping finances so tightly you suffocate. True security comes from healthy flow, not hoarding." } },
+        { "id": 68, "name": "Five of Pentacles", "rank": "5", "imagePrompt": "Five of Pentacles tarot card, two impoverished figures trudging through snow past a lit stained glass church window showing five pentacles, crutches and rags, mystical art nouveau, desolate blue and distant warm gold", "upright": { "keywords": ["financial loss", "poverty", "lack mindset", "isolation", "worry"], "meaning": "Hard times and financial worry weigh heavily. But notice the lit window — help and warmth are right there if you just look up and walk in." }, "reversed": { "keywords": ["recovery from financial loss", "spiritual poverty", "finding help"], "meaning": "The worst of the financial hardship is passing. Help arrives or you finally accept it. Recovery from material and spiritual poverty begins." } },
+        { "id": 69, "name": "Six of Pentacles", "rank": "6", "imagePrompt": "Six of Pentacles tarot card, a wealthy merchant holding scales while distributing coins to two kneeling beggars, six pentacles, mystical art nouveau, generous purple and charity gold", "upright": { "keywords": ["giving", "receiving", "sharing wealth", "generosity", "charity"], "meaning": "Generosity flows in both directions. Give when you can, receive gracefully when you need. The balance of giving and receiving creates abundance for all." }, "reversed": { "keywords": ["strings attached", "self-care", "debt", "one-sided charity"], "meaning": "Generosity with strings attached, or one-sided giving that creates resentment. True charity expects nothing in return." } },
+        { "id": 70, "name": "Seven of Pentacles", "rank": "7", "imagePrompt": "Seven of Pentacles tarot card, a farmer leaning on a hoe gazing at a vine heavy with seven golden pentacles, garden and blue sky, patience, mystical art nouveau, earthy green and harvest gold", "upright": { "keywords": ["long-term view", "sustainable results", "perseverance", "investment"], "meaning": "Patience as you watch your investments grow. The seeds you planted are bearing fruit. Take the long view and trust the harvest is coming." }, "reversed": { "keywords": ["lack of long-term vision", "limited reward", "impatience"], "meaning": "Impatience undermines long-term growth. You want to harvest before the fruit is ripe. Or the investment isn't yielding expected returns — reassess." } },
+        { "id": 71, "name": "Eight of Pentacles", "rank": "8", "imagePrompt": "Eight of Pentacles tarot card, a craftsman diligently carving pentacles at a workbench, six completed pentacles displayed, town in distance, focused attention, mystical art nouveau, dedication brown and mastery gold", "upright": { "keywords": ["apprenticeship", "repetitive tasks", "mastery", "skill development"], "meaning": "Dedicated practice builds mastery. Each repetition refines your craft. Your diligent effort and attention to detail will produce masterwork." }, "reversed": { "keywords": ["self-development", "perfectionism", "misdirected activity"], "meaning": "Perfectionism paralyzes progress, or you're pouring effort into the wrong skill. Focus your development where it matters most." } },
+        { "id": 72, "name": "Nine of Pentacles", "rank": "9", "imagePrompt": "Nine of Pentacles tarot card, an elegant woman in a luxurious vineyard with a hooded falcon on her hand, nine pentacles in abundant vines, snail at feet, manor house, mystical art nouveau, luxury burgundy and abundance gold", "upright": { "keywords": ["abundance", "luxury", "self-sufficiency", "financial independence"], "meaning": "You've built something beautiful through your own efforts. Enjoy the fruits of your labor — luxury, independence, and elegant self-sufficiency are yours." }, "reversed": { "keywords": ["self-worth", "over-investment in work", "hustling", "superficial"], "meaning": "Material success without personal fulfillment. You've worked so hard for luxury that you've forgotten how to enjoy it." } },
+        { "id": 73, "name": "Ten of Pentacles", "rank": "10", "imagePrompt": "Ten of Pentacles tarot card, an old patriarch with dogs under an archway, family gathering in courtyard, ten pentacles arranged in Tree of Life pattern, coat of arms, mystical art nouveau, legacy gold and dynasty rich tones", "upright": { "keywords": ["wealth", "financial security", "family", "long-term success", "legacy"], "meaning": "Generational wealth and lasting legacy. Financial security extends to your family and future generations. You've built something that endures." }, "reversed": { "keywords": ["financial failure", "lone wolf", "family disputes over money"], "meaning": "Family wealth disputes or failure to build lasting security. Legacy crumbles when greed or conflict enters the picture." } },
+        { "id": 74, "name": "Page of Pentacles", "rank": "Page", "imagePrompt": "Page of Pentacles tarot card, a studious youth standing in a green field gazing at a golden pentacle held up, plowed earth, distant mountains, mystical art nouveau, studious green and promising gold", "upright": { "keywords": ["manifestation", "financial opportunity", "skill development", "new venture"], "meaning": "A promising new venture or learning opportunity in the material world. Your studious attention to practical matters will yield real rewards." }, "reversed": { "keywords": ["lack of progress", "procrastination", "learn from failure"], "meaning": "Great ideas without follow-through. Procrastination or lack of practical skills stalls your material progress. Study and practice more." } },
+        { "id": 75, "name": "Knight of Pentacles", "rank": "Knight", "imagePrompt": "Knight of Pentacles tarot card, a patient knight on a steady dark horse holding a pentacle, plowed farmland, oak trees, slow and steady progress, mystical art nouveau, reliable earth brown and steadfast gold", "upright": { "keywords": ["hard work", "productivity", "routine", "conservatism", "reliability"], "meaning": "Slow, steady, and utterly reliable. Your methodical approach and tireless work ethic will get you where flashier methods cannot." }, "reversed": { "keywords": ["self-discipline", "boredom", "feeling stuck", "perfectionism"], "meaning": "Stuck in a rut of routine. Your reliability has become rigidity. Sometimes progress requires breaking comfortable patterns." } },
+        { "id": 76, "name": "Queen of Pentacles", "rank": "Queen", "imagePrompt": "Queen of Pentacles tarot card, a nurturing queen on a garden throne cradling a golden pentacle, rabbit at feet, lush roses and blooming garden, fruit trees, mystical art nouveau, nurturing green and earthy gold", "upright": { "keywords": ["nurturing", "practical", "providing financially", "working parent", "down-to-earth"], "meaning": "You blend material success with nurturing warmth beautifully. A provider who creates abundance while keeping everyone well-fed and loved." }, "reversed": { "keywords": ["financial independence", "self-care", "work-home conflict"], "meaning": "The balance between providing and nurturing tips. Either neglecting home for work or neglecting finances for comfort. Find the middle ground." } },
+        { "id": 77, "name": "King of Pentacles", "rank": "King", "imagePrompt": "King of Pentacles tarot card, a wealthy king on a throne decorated with bull carvings, holding scepter and pentacle, castle and abundant vineyard behind, robes with grapevines, mystical art nouveau, sovereign green and Midas gold", "upright": { "keywords": ["wealth", "business", "leadership", "security", "discipline", "abundance"], "meaning": "The Midas touch. Your disciplined approach to wealth and business creates enduring abundance. A leader who builds empires that last." }, "reversed": { "keywords": ["financially inept", "obsessed with wealth", "stubborn", "materialistic"], "meaning": "Wealth becomes obsession. Material success at the cost of everything else, or financial recklessness despite appearing successful." } }
+      ]
+    }
+  },
+  "spreads": {
+    "single": {
+      "name": "Single Card Draw",
+      "positions": 1,
+      "description": "A quick daily guidance card",
+      "positionNames": ["The Message"]
+    },
+    "threeCard": {
+      "name": "Three Card Spread",
+      "positions": 3,
+      "description": "Past, Present, and Future reading",
+      "positionNames": ["Past", "Present", "Future"]
+    },
+    "celticCross": {
+      "name": "Celtic Cross",
+      "positions": 10,
+      "description": "A comprehensive deep-dive reading",
+      "positionNames": ["Present", "Challenge", "Foundation", "Recent Past", "Crown", "Near Future", "Self", "Environment", "Hopes/Fears", "Outcome"]
+    },
+    "love": {
+      "name": "Love Spread",
+      "positions": 5,
+      "description": "A reading focused on romantic relationships",
+      "positionNames": ["Your Feelings", "Their Feelings", "The Connection", "The Challenge", "The Potential"]
+    },
+    "career": {
+      "name": "Career Spread",
+      "positions": 4,
+      "description": "A reading focused on professional path",
+      "positionNames": ["Current Position", "Obstacles", "Hidden Influence", "Best Action"]
+    }
+  }
+}

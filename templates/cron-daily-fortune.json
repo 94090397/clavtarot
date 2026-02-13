@@ -1,0 +1,12 @@
+{
+  "cron": {
+    "jobs": {
+      "clavtarot-daily-fortune": {
+        "schedule": "0 8 * * *",
+        "message": "Draw my daily tarot fortune card and share the reading with a beautiful card image. Include insights for love, career, and health.",
+        "enabled": true,
+        "description": "Daily morning tarot fortune card at 8:00 AM"
+      }
+    }
+  }
+}
