@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClavTarot — AI Tarot Reader</title>
+  <meta name="description" content="Free AI-powered tarot card readings. Draw cards, explore spreads, and discover what the universe has in store for you.">
+  <meta property="og:title" content="ClavTarot — AI Tarot Reader">
+  <meta property="og:description" content="Free mystical tarot readings with beautiful AI-generated card art.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0a0a12;
+      --bg2: #12121f;
+      --card-bg: #1a1a2e;
+      --gold: #d4a44c;
+      --gold-light: #f0d078;
+      --violet: #9b59b6;
+      --violet-dark: #6c3483;
+      --violet-glow: rgba(155, 89, 182, 0.3);
+      --text: #e8e0d4;
+      --text-dim: #8a8098;
+      --star: #f0d078;
+      --red: #e74c3c;
+      --blue: #5dade2;
+      --green: #58d68d;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Cormorant Garamond', serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ─── Starfield Background ─── */
+    .stars {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .stars span {
+      position: absolute;
+      border-radius: 50%;
+      background: white;
+      animation: twinkle var(--dur) ease-in-out infinite;
+      opacity: 0;
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0; }
+      50% { opacity: var(--brightness); }
+    }
+
+    /* ─── Layout ─── */
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* ─── Header ─── */
+    header {
+      text-align: center;
+      padding: 50px 0 30px;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3em;
+      font-weight: 900;
+      background: linear-gradient(135deg, var(--gold), var(--violet), var(--gold-light));
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shimmer 3s ease infinite;
+    }
+    @keyframes shimmer {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    header p {
+      font-size: 1.2em;
+      color: var(--text-dim);
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    /* ─── Spread Selector ─── */
+    .spread-selector {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      justify-content: center;
+      margin: 30px 0;
+    }
+    .spread-btn {
+      background: var(--card-bg);
+      border: 1px solid rgba(155, 89, 182, 0.3);
+      color: var(--text);
+      padding: 14px 24px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-family: 'Cinzel', serif;
+      font-size: 0.95em;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      min-width: 140px;
+    }
+    .spread-btn:hover {
+      border-color: var(--gold);
+      background: rgba(212, 164, 76, 0.1);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(155, 89, 182, 0.2);
+    }
+    .spread-btn.active {
+      border-color: var(--gold);
+      background: rgba(212, 164, 76, 0.15);
+      box-shadow: 0 0 20px var(--violet-glow);
+    }
+    .spread-btn .icon { font-size: 1.5em; }
+    .spread-btn .label { font-weight: 700; }
+    .spread-btn .sub { font-size: 0.75em; color: var(--text-dim); font-family: 'Cormorant Garamond', serif; }
+
+    /* ─── Draw Button ─── */
+    .draw-section { text-align: center; margin: 25px 0; }
+    .draw-btn {
+      background: linear-gradient(135deg, var(--violet-dark), var(--violet));
+      color: white;
+      border: none;
+      padding: 18px 50px;
+      font-family: 'Cinzel', serif;
+      font-size: 1.2em;
+      font-weight: 700;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+      overflow: hidden;
+    }
+    .draw-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px var(--violet-glow), 0 0 80px rgba(155, 89, 182, 0.15);
+    }
+    .draw-btn:active { transform: scale(0.98); }
+    .draw-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .draw-btn .shimmer {
+      position: absolute;
+      top: 0; left: -100%;
+      width: 100%; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      animation: btnShimmer 2s infinite;
+    }
+    @keyframes btnShimmer {
+      0% { left: -100%; }
+      100% { left: 100%; }
+    }
+
+    /* ─── Shuffling Animation ─── */
+    .shuffle-overlay {
+      display: none;
+      text-align: center;
+      padding: 40px;
+      animation: fadeIn 0.5s;
+    }
+    .shuffle-overlay.active { display: block; }
+    .shuffle-cards {
+      font-size: 4em;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+    .shuffle-cards span {
+      display: inline-block;
+      animation: shuffleCard 0.6s ease-in-out infinite;
+    }
+    .shuffle-cards span:nth-child(2) { animation-delay: 0.1s; }
+    .shuffle-cards span:nth-child(3) { animation-delay: 0.2s; }
+    .shuffle-cards span:nth-child(4) { animation-delay: 0.3s; }
+    .shuffle-cards span:nth-child(5) { animation-delay: 0.4s; }
+    @keyframes shuffleCard {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(5deg); }
+    }
+    .shuffle-text {
+      font-size: 1.3em;
+      font-style: italic;
+      color: var(--text-dim);
+      animation: pulse 1.5s ease infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.5; }
+      50% { opacity: 1; }
+    }
+
+    /* ─── Reading Area ─── */
+    .reading-area {
+      display: none;
+      animation: fadeIn 0.8s;
+    }
+    .reading-area.active { display: block; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ─── Card ─── */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .tarot-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(212, 164, 76, 0.3);
+      border-radius: 16px;
+      padding: 24px;
+      width: 100%;
+      max-width: 420px;
+      opacity: 0;
+      transform: rotateY(90deg);
+      animation: flipIn 0.8s forwards;
+      position: relative;
+      overflow: hidden;
+    }
+    .tarot-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, var(--violet-glow) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+    .tarot-card:hover::before { opacity: 1; }
+    @keyframes flipIn {
+      from { opacity: 0; transform: rotateY(90deg) scale(0.8); }
+      to { opacity: 1; transform: rotateY(0deg) scale(1); }
+    }
+    .card-position {
+      font-family: 'Cinzel', serif;
+      font-size: 0.85em;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+    .card-name {
+      font-family: 'Cinzel', serif;
+      font-size: 1.6em;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 4px;
+    }
+    .card-orientation {
+      font-size: 0.95em;
+      color: var(--violet);
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .card-orientation.reversed { color: var(--red); }
+    .card-major { color: var(--star); font-size: 0.85em; }
+    .card-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .keyword {
+      background: rgba(155, 89, 182, 0.15);
+      border: 1px solid rgba(155, 89, 182, 0.3);
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      color: var(--violet);
+    }
+    .card-meaning {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+    .card-topics {
+      display: grid;
+      gap: 10px;
+      font-size: 0.95em;
+    }
+    .topic {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      background: rgba(0,0,0,0.2);
+    }
+    .topic-icon { font-size: 1.1em; flex-shrink: 0; }
+    .topic-label { font-weight: 600; min-width: 55px; }
+    .topic.love .topic-label { color: var(--red); }
+    .topic.career .topic-label { color: var(--blue); }
+    .topic.health .topic-label { color: var(--green); }
+
+    /* ─── Wisdom Footer ─── */
+    .reading-wisdom {
+      text-align: center;
+      padding: 30px;
+      font-size: 1.15em;
+      font-style: italic;
+      color: var(--text-dim);
+      border-top: 1px solid rgba(155, 89, 182, 0.2);
+      margin-top: 30px;
+    }
+
+    /* ─── Support Section ─── */
+    .support {
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 40px;
+      border-top: 1px solid rgba(155, 89, 182, 0.15);
+    }
+    .support h3 {
+      font-family: 'Cinzel', serif;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .support p { color: var(--text-dim); margin-bottom: 20px; }
+    .support-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .support-link {
+      background: var(--card-bg);
+      border: 1px solid rgba(212, 164, 76, 0.3);
+      color: var(--gold);
+      padding: 12px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-family: 'Cinzel', serif;
+      font-weight: 700;
+      transition: all 0.3s;
+    }
+    .support-link:hover {
+      background: rgba(212, 164, 76, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 20px rgba(212, 164, 76, 0.2);
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--text-dim);
+      font-size: 0.9em;
+    }
+    footer a { color: var(--violet); text-decoration: none; }
+    footer a:hover { color: var(--gold); }
+
+    /* ─── Responsive ─── */
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .spread-btn { min-width: 100px; padding: 10px 14px; }
+      .tarot-card { padding: 18px; }
+      .card-name { font-size: 1.3em; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Starfield -->
+  <div class="stars" id="stars"></div>
+
+  <div class="container">
+    <header>
+      <h1>ClavTarot</h1>
+      <p>The cards are listening. What do you seek?</p>
+    </header>
+
+    <!-- Spread Selector -->
+    <div class="spread-selector">
+      <button class="spread-btn active" data-spread="single" onclick="selectSpread('single')">
+        <span class="icon">🔮</span>
+        <span class="label">Single Card</span>
+        <span class="sub">Quick Guidance</span>
+      </button>
+      <button class="spread-btn" data-spread="threeCard" onclick="selectSpread('threeCard')">
+        <span class="icon">🃏</span>
+        <span class="label">Three Cards</span>
+        <span class="sub">Past · Present · Future</span>
+      </button>
+      <button class="spread-btn" data-spread="love" onclick="selectSpread('love')">
+        <span class="icon">💕</span>
+        <span class="label">Love Spread</span>
+        <span class="sub">5 Cards · Heart</span>
+      </button>
+      <button class="spread-btn" data-spread="career" onclick="selectSpread('career')">
+        <span class="icon">💼</span>
+        <span class="label">Career Spread</span>
+        <span class="sub">4 Cards · Path</span>
+      </button>
+      <button class="spread-btn" data-spread="celticCross" onclick="selectSpread('celticCross')">
+        <span class="icon">✨</span>
+        <span class="label">Celtic Cross</span>
+        <span class="sub">10 Cards · Deep</span>
+      </button>
+    </div>
+
+    <!-- Draw Button -->
+    <div class="draw-section">
+      <button class="draw-btn" id="drawBtn" onclick="drawReading()">
+        <span class="shimmer"></span>
+        Draw the Cards
+      </button>
+    </div>
+
+    <!-- Shuffling Animation -->
+    <div class="shuffle-overlay" id="shuffleOverlay">
+      <div class="shuffle-cards">
+        <span>🂠</span><span>🂠</span><span>🂠</span><span>🂠</span><span>🂠</span>
+      </div>
+      <div class="shuffle-text" id="shuffleText">Shuffling the deck...</div>
+    </div>
+
+    <!-- Reading Area -->
+    <div class="reading-area" id="readingArea">
+      <div class="card-container" id="cardContainer"></div>
+      <div class="reading-wisdom" id="readingWisdom"></div>
+    </div>
+
+    <!-- Support -->
+    <div class="support">
+      <h3>Enjoying ClavTarot?</h3>
+      <p>If the cards brought you a moment of insight, consider supporting this project.</p>
+      <div class="support-links">
+        <a href="https://buymeacoffee.com/clavtarot" target="_blank" class="support-link">☕ Buy Me a Coffee</a>
+        <a href="https://github.com/user/clavtarot" target="_blank" class="support-link">⭐ Star on GitHub</a>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Built with ✨ by <a href="https://github.com/user/clavtarot">ClavTarot</a>
+        · Powered by <a href="https://github.com/openclaw/openclaw">OpenClaw</a>
+        · <a href="https://github.com/user/clavtarot">View Source</a>
+      </p>
+      <p style="margin-top: 8px; font-size: 0.8em;">
+        Tarot is a tool for self-reflection, not a substitute for professional advice.
+      </p>
+    </footer>
+  </div>
+
+<script>
+// ═══ Tarot Deck Data (embedded) ═══
+const deckData = DECK_DATA_PLACEHOLDER;
+
+const allCards = [
+  ...deckData.majorArcana,
+  ...deckData.minorArcana.wands.cards,
+  ...deckData.minorArcana.cups.cards,
+  ...deckData.minorArcana.swords.cards,
+  ...deckData.minorArcana.pentacles.cards,
+];
+
+let currentSpread = 'single';
+
+// ═══ Starfield ═══
+function createStars() {
+  const container = document.getElementById('stars');
+  for (let i = 0; i < 120; i++) {
+    const star = document.createElement('span');
+    const size = Math.random() * 2.5 + 0.5;
+    star.style.cssText = `
+      width: ${size}px; height: ${size}px;
+      top: ${Math.random() * 100}%;
+      left: ${Math.random() * 100}%;
+      --dur: ${Math.random() * 4 + 2}s;
+      --brightness: ${Math.random() * 0.7 + 0.3};
+    `;
+    container.appendChild(star);
+  }
+}
+createStars();
+
+// ═══ Spread Selection ═══
+function selectSpread(type) {
+  currentSpread = type;
+  document.querySelectorAll('.spread-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.spread === type);
+  });
+  // Hide previous reading
+  document.getElementById('readingArea').classList.remove('active');
+  document.getElementById('shuffleOverlay').classList.remove('active');
+}
+
+// ═══ Card Drawing ═══
+function shuffle(arr) {
+  const a = [...arr];
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function drawCards(n) {
+  return shuffle(allCards).slice(0, n).map(card => ({
+    ...card,
+    isReversed: Math.random() > 0.5,
+  }));
+}
+
+// ═══ Main Draw ═══
+async function drawReading() {
+  const btn = document.getElementById('drawBtn');
+  const shuffleOverlay = document.getElementById('shuffleOverlay');
+  const readingArea = document.getElementById('readingArea');
+  const container = document.getElementById('cardContainer');
+  const wisdom = document.getElementById('readingWisdom');
+
+  btn.disabled = true;
+  readingArea.classList.remove('active');
+
+  // Show shuffle animation
+  shuffleOverlay.classList.add('active');
+  const shuffleText = document.getElementById('shuffleText');
+
+  const messages = [
+    'Shuffling the 78-card deck...',
+    'The cards whisper ancient secrets...',
+    'Your energy flows into the cards...',
+    'The chosen cards rise to the surface...',
+  ];
+  for (let i = 0; i < messages.length; i++) {
+    shuffleText.textContent = messages[i];
+    await sleep(700);
+  }
+
+  shuffleOverlay.classList.remove('active');
+
+  // Draw cards based on spread
+  const spread = deckData.spreads[currentSpread];
+  const cards = drawCards(spread.positions);
+
+  // Render cards
+  container.innerHTML = '';
+  cards.forEach((card, i) => {
+    const orient = card.isReversed ? 'reversed' : 'upright';
+    const orientDisplay = card.isReversed ? 'Reversed ↓' : 'Upright ↑';
+    const data = card[orient];
+    const isMajor = card.id <= 21;
+
+    const el = document.createElement('div');
+    el.className = 'tarot-card';
+    el.style.animationDelay = `${i * 0.2}s`;
+
+    let topicsHtml = '';
+    if (data.love) {
+      topicsHtml = `
+        <div class="card-topics">
+          <div class="topic love"><span class="topic-icon">♥</span><span class="topic-label">Love</span><span>${data.love}</span></div>
+          <div class="topic career"><span class="topic-icon">★</span><span class="topic-label">Career</span><span>${data.career}</span></div>
+          <div class="topic health"><span class="topic-icon">♣</span><span class="topic-label">Health</span><span>${data.health}</span></div>
+        </div>`;
+    }
+
+    el.innerHTML = `
+      <div class="card-position">${spread.positionNames[i]}</div>
+      <div class="card-name">${card.name}</div>
+      <div class="card-orientation ${orient}">${orientDisplay} ${isMajor ? '<span class="card-major">★ Major Arcana</span>' : ''}</div>
+      <div class="card-keywords">${data.keywords.map(k => `<span class="keyword">${k}</span>`).join('')}</div>
+      <div class="card-meaning">${data.meaning}</div>
+      ${topicsHtml}
+    `;
+    container.appendChild(el);
+  });
+
+  // Wisdom footer
+  const wisdoms = {
+    single: 'The universe has spoken. Carry this message with you.',
+    threeCard: 'Past informs present. Present shapes future. The choice remains yours.',
+    love: 'Love is both the question and the answer. Trust your heart.',
+    career: 'Fortune favors the bold — but wisdom guides the way.',
+    celticCross: 'Ten cards, ten facets of your journey. The pattern reveals not just what will happen, but why.',
+  };
+  wisdom.textContent = '✧ ' + wisdoms[currentSpread] + ' ✧';
+
+  readingArea.classList.add('active');
+  btn.disabled = false;
+
+  // Scroll to reading
+  setTimeout(() => {
+    readingArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 300);
+}
+
+function sleep(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+</script>
+</body>
+</html>
